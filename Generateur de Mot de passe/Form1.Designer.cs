@@ -1,4 +1,4 @@
-﻿namespace Generateur_de_Mot_de_passe
+namespace Generateur_de_Mot_de_passe
 {
     partial class Form1
     {
@@ -28,72 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            Nouveau = new Button();
+            Modifier = new Button();
+            Sauvegarder = new Button();
+            Effacer = new Button();
             listBox1 = new ListBox();
             panel1 = new Panel();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
+            Titre = new Label();
+            Description = new Label();
             textBox1 = new TextBox();
-            label3 = new Label();
-            checkBox1 = new CheckBox();
-            button5 = new Button();
-            button6 = new Button();
+            Motdepasse = new Label();
+            Affichermdp = new CheckBox();
+            copier = new Button();
+            generermdp = new Button();
             groupBox1 = new GroupBox();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            label5 = new Label();
-            label4 = new Label();
-            trackBar1 = new TrackBar();
+            checkchiffre = new CheckBox();
+            checkcar = new CheckBox();
+            checkmaj = new CheckBox();
+            longueurmdp = new Label();
+            longueur = new Label();
+            trackbar = new TrackBar();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)trackbar).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // Nouveau
             // 
-            button1.Location = new Point(92, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Nouveau";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Nouveau.Location = new Point(92, 3);
+            Nouveau.Name = "Nouveau";
+            Nouveau.Size = new Size(94, 29);
+            Nouveau.TabIndex = 0;
+            Nouveau.Text = "Nouveau";
+            Nouveau.UseVisualStyleBackColor = true;
+            Nouveau.Click += Nouveau_Click;
             // 
-            // button2
+            // Modifier
             // 
-            button2.Location = new Point(192, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Modifier";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            Modifier.Location = new Point(192, 3);
+            Modifier.Name = "Modifier";
+            Modifier.Size = new Size(94, 29);
+            Modifier.TabIndex = 1;
+            Modifier.Text = "Modifier";
+            Modifier.UseVisualStyleBackColor = true;
+            Modifier.Click += buttonModifier_Click;
             // 
-            // button3
+            // Sauvegarder
             // 
-            button3.Location = new Point(292, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 2;
-            button3.Text = "Sauvegarder";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            Sauvegarder.Location = new Point(292, 3);
+            Sauvegarder.Name = "Sauvegarder";
+            Sauvegarder.Size = new Size(94, 29);
+            Sauvegarder.TabIndex = 2;
+            Sauvegarder.Text = "Sauvegarder";
+            Sauvegarder.UseVisualStyleBackColor = true;
+            Sauvegarder.Click += buttonSauvegarder_Click;
             // 
-            // button4
+            // Effacer
             // 
-            button4.Location = new Point(392, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 3;
-            button4.Text = "Effacer";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            Effacer.Location = new Point(392, 3);
+            Effacer.Name = "Effacer";
+            Effacer.Size = new Size(94, 29);
+            Effacer.TabIndex = 3;
+            Effacer.Text = "Effacer";
+            Effacer.UseVisualStyleBackColor = true;
+            Effacer.Click += buttonEffacer_Click;
             // 
             // listBox1
             // 
@@ -107,15 +107,15 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(Nouveau);
+            panel1.Controls.Add(Modifier);
+            panel1.Controls.Add(Effacer);
+            panel1.Controls.Add(Sauvegarder);
             panel1.Location = new Point(229, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(559, 91);
             panel1.TabIndex = 5;
-            panel1.Paint += panel1_Paint;
+            
             // 
             // textBox2
             // 
@@ -130,27 +130,24 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(271, 27);
             textBox3.TabIndex = 8;
-            textBox3.TextChanged += textBox3_TextChanged;
             // 
-            // label1
+            // Titre
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(229, 117);
-            label1.Name = "label1";
-            label1.Size = new Size(39, 20);
-            label1.TabIndex = 9;
-            label1.Text = "Titre";
-            label1.Click += label1_Click;
+            Titre.AutoSize = true;
+            Titre.Location = new Point(229, 117);
+            Titre.Name = "Titre";
+            Titre.Size = new Size(39, 20);
+            Titre.TabIndex = 9;
+            Titre.Text = "Titre";
             // 
-            // label2
+            // Description
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(229, 161);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 20);
-            label2.TabIndex = 10;
-            label2.Text = "Description";
-            label2.Click += label2_Click;
+            Description.AutoSize = true;
+            Description.Location = new Point(229, 161);
+            Description.Name = "Description";
+            Description.Size = new Size(85, 20);
+            Description.TabIndex = 10;
+            Description.Text = "Description";
             // 
             // textBox1
             // 
@@ -159,126 +156,118 @@
             textBox1.Size = new Size(271, 27);
             textBox1.TabIndex = 11;
             // 
-            // label3
+            // Motdepasse
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(217, 208);
-            label3.Name = "label3";
-            label3.Size = new Size(98, 20);
-            label3.TabIndex = 12;
-            label3.Text = "Mot de passe";
-            label3.Click += label3_Click;
+            Motdepasse.AutoSize = true;
+            Motdepasse.Location = new Point(217, 208);
+            Motdepasse.Name = "Motdepasse";
+            Motdepasse.Size = new Size(98, 20);
+            Motdepasse.TabIndex = 12;
+            Motdepasse.Text = "Mot de passe";
             // 
-            // checkBox1
+            // Affichermdp
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(621, 208);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(83, 24);
-            checkBox1.TabIndex = 13;
-            checkBox1.Text = "Afficher";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            Affichermdp.AutoSize = true;
+            Affichermdp.Location = new Point(621, 208);
+            Affichermdp.Name = "Affichermdp";
+            Affichermdp.Size = new Size(83, 24);
+            Affichermdp.TabIndex = 13;
+            Affichermdp.Text = "Afficher";
+            Affichermdp.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // copier
             // 
-            button5.Location = new Point(618, 240);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 29);
-            button5.TabIndex = 14;
-            button5.Text = "Copier";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            copier.Location = new Point(618, 240);
+            copier.Name = "copier";
+            copier.Size = new Size(94, 29);
+            copier.TabIndex = 14;
+            copier.Text = "Copier";
+            copier.UseVisualStyleBackColor = true;
+            copier.Click += buttonCopier_Click;
             // 
-            // button6
+            // generermdp
             // 
-            button6.Location = new Point(292, 240);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 29);
-            button6.TabIndex = 15;
-            button6.Text = "Générer";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            generermdp.Location = new Point(292, 240);
+            generermdp.Name = "generermdp";
+            generermdp.Size = new Size(94, 29);
+            generermdp.TabIndex = 15;
+            generermdp.Text = "Générer";
+            generermdp.UseVisualStyleBackColor = true;
+            generermdp.Click += buttonGenerer_Click;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(checkBox4);
-            groupBox1.Controls.Add(checkBox3);
-            groupBox1.Controls.Add(checkBox2);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(trackBar1);
+            groupBox1.Controls.Add(checkchiffre);
+            groupBox1.Controls.Add(checkcar);
+            groupBox1.Controls.Add(checkmaj);
+            groupBox1.Controls.Add(longueurmdp);
+            groupBox1.Controls.Add(longueur);
+            groupBox1.Controls.Add(trackbar);
             groupBox1.Location = new Point(217, 275);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(575, 172);
             groupBox1.TabIndex = 16;
             groupBox1.TabStop = false;
             groupBox1.Text = "Option du générateur";
-            groupBox1.Enter += groupBox1_Enter;
             // 
-            // checkBox4
+            // checkchiffre
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(6, 103);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(81, 24);
-            checkBox4.TabIndex = 21;
-            checkBox4.Text = "Chiffres";
-            checkBox4.UseVisualStyleBackColor = true;
-            checkBox4.CheckedChanged += checkBox4_CheckedChanged;
+            checkchiffre.AutoSize = true;
+            checkchiffre.Location = new Point(6, 103);
+            checkchiffre.Name = "checkchiffre";
+            checkchiffre.Size = new Size(81, 24);
+            checkchiffre.TabIndex = 21;
+            checkchiffre.Text = "Chiffres";
+            checkchiffre.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkcar
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 133);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(161, 24);
-            checkBox3.TabIndex = 20;
-            checkBox3.Text = "Caractères spéciaux";
-            checkBox3.UseVisualStyleBackColor = true;
-            checkBox3.CheckedChanged += checkBox3_CheckedChanged;
+            checkcar.AutoSize = true;
+            checkcar.Location = new Point(6, 133);
+            checkcar.Name = "checkcar";
+            checkcar.Size = new Size(161, 24);
+            checkcar.TabIndex = 20;
+            checkcar.Text = "Caractères spéciaux";
+            checkcar.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checkmaj
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(6, 73);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(97, 24);
-            checkBox2.TabIndex = 17;
-            checkBox2.Text = "Majuscule";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            checkmaj.AutoSize = true;
+            checkmaj.Location = new Point(6, 73);
+            checkmaj.Name = "checkmaj";
+            checkmaj.Size = new Size(97, 24);
+            checkmaj.TabIndex = 17;
+            checkmaj.Text = "Majuscule";
+            checkmaj.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // longueurmdp
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(401, 38);
-            label5.Name = "label5";
-            label5.Size = new Size(23, 20);
-            label5.TabIndex = 19;
-            label5.Text = "??";
-            label5.Click += label5_Click;
+            longueurmdp.AutoSize = true;
+            longueurmdp.Location = new Point(401, 38);
+            longueurmdp.Name = "longueurmdp";
+            longueurmdp.Size = new Size(23, 20);
+            longueurmdp.TabIndex = 19;
+            longueurmdp.Text = "??";
             // 
-            // label4
+            // longueur
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(26, 38);
-            label4.Name = "label4";
-            label4.Size = new Size(71, 20);
-            label4.TabIndex = 18;
-            label4.Text = "Longueur";
+            longueur.AutoSize = true;
+            longueur.Location = new Point(26, 38);
+            longueur.Name = "longueur";
+            longueur.Size = new Size(71, 20);
+            longueur.TabIndex = 18;
+            longueur.Text = "Longueur";
             // 
-            // trackBar1
+            // trackbar
             // 
-            trackBar1.Location = new Point(187, 16);
-            trackBar1.Maximum = 50;
-            trackBar1.Minimum = 6;
-            trackBar1.Name = "trackBar1";
-            trackBar1.Size = new Size(202, 56);
-            trackBar1.TabIndex = 17;
-            trackBar1.Value = 6;
-            trackBar1.Scroll += trackBar1_Scroll;
+            trackbar.Location = new Point(187, 16);
+            trackbar.Maximum = 50;
+            trackbar.Minimum = 6;
+            trackbar.Name = "trackbar";
+            trackbar.Size = new Size(202, 56);
+            trackbar.TabIndex = 17;
+            trackbar.Value = 6;
             // 
             // Form1
             // 
@@ -287,13 +276,13 @@
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(checkBox1);
-            Controls.Add(label3);
+            Controls.Add(generermdp);
+            Controls.Add(copier);
+            Controls.Add(Affichermdp);
+            Controls.Add(Motdepasse);
             Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(Description);
+            Controls.Add(Titre);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(panel1);
@@ -301,38 +290,37 @@
             Cursor = Cursors.Cross;
             Name = "Form1";
             Text = "Generateur de mot de passe";
-            Load += Form1_Load;
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)trackbar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button Nouveau;
+        private Button Modifier;
+        private Button Sauvegarder;
+        private Button Effacer;
         private ListBox listBox1;
         private Panel panel1;
         private TextBox textBox2;
         private TextBox textBox3;
-        private Label label1;
-        private Label label2;
+        private Label Titre;
+        private Label Description;
         private TextBox textBox1;
-        private Label label3;
-        private CheckBox checkBox1;
-        private Button button5;
-        private Button button6;
+        private Label Motdepasse;
+        private CheckBox Affichermdp;
+        private Button copier;
+        private Button generermdp;
         private GroupBox groupBox1;
-        private TrackBar trackBar1;
-        private Label label4;
-        private Label label5;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
+        private TrackBar trackbar;
+        private Label longueur;
+        private Label longueurmdp;
+        private CheckBox checkchiffre;
+        private CheckBox checkcar;
+        private CheckBox checkmaj;
     }
 }
